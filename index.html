@@ -29,7 +29,8 @@
 
 <body>
     <!-- Header Container -->
-    <header class="max-w-[1170px] w-[90%] mx-auto mt-12 mb-28">
+    <header class="max-w-[1170px] w-[90%] mx-auto mt-12 mb-28"
+        style="background: linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);">
         <!-- Nav Section -->
         <nav class="flex justify-between items-center">
             <!-- Logo -->
@@ -41,9 +42,10 @@
             </div>
 
             <!-- Hamburger -->
-            <div class="block md:block lg:hidden">
-                <i class="fa-solid fa-bars"></i>
-            </div> 
+            <div
+                class="btn bg-white border-[#E9E9E9] rounded-full size-12 flex justify-center items-center md:flex lg:hidden group">
+                <div><i class="fa-solid fa-bars group-hover:text-white"></i></div>
+            </div>
 
             <!-- Menu -->
             <div class="hidden md:hidden lg:block">
@@ -59,23 +61,43 @@
             <!-- Icons and button container -->
             <div class="hidden md:hidden lg:flex lg:items-center lg:gap-4">
                 <!-- search and cart icon -->
-                <div class="btn flex justify-center items-center size-12 border-2 border-[#E9E9E9] rounded-full bg-white group">
+                <div
+                    class="btn flex justify-center items-center size-12 border-2 border-[#E9E9E9] rounded-full bg-white group">
                     <i class="fa-solid fa-magnifying-glass group-hover:text-white"></i>
                 </div>
-                <div class="btn flex justify-center items-center size-12 border-2 border-[#E9E9E9] rounded-full bg-white group">
+                <div
+                    class="btn flex justify-center items-center size-12 border-2 border-[#E9E9E9] rounded-full bg-white group">
                     <i class="fa-solid fa-cart-shopping group-hover:text-white"></i>
                 </div>
                 <!-- btn -->
-                <div class="btn bg-[#ABEF5F] text-[#1C1C1C] text-xl border-none rounded-[32px] group">
+                <div class="btn bg-[#ABEF5F] text-[#1C1C1C] text-xl border-none rounded-[32px] px-6 py-3 h-fit group">
                     <button class="group-hover:text-white">Book Consult</button>
 
-                    <div class="flex justify-center items-center size-8 bg-[#1C1C1C] rounded-full group-hover:bg-[#ABEF5F]">
+                    <div
+                        class="flex justify-center items-center size-8 bg-[#1C1C1C] rounded-full group-hover:bg-[#ABEF5F]">
                         <i class="fa-solid fa-arrow-right-long -rotate-45 text-white group-hover:text-black"></i>
                     </div>
                 </div>
             </div>
 
         </nav>
+
+        <!-- Banner section -->
+        <section>
+            <div class="text-center mt-10">
+                <img class="mx-auto mb-6" src="./assets/banner.png" alt="">
+                <h1 class="text-2xl lg:text-6xl md:text-[36px] font-extrabold mb-6">A barn house of this design has a striking appearance</h1>
+                <p class="text-[#494949] mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <!-- Button -->
+                <div class="btn bg-[#ABEF5F80] text-[#1C1C1C] text-xl border-2 border-[#ABEF5F] rounded-[32px] px-6 py-3 h-fit group">
+                    <button class="group-hover:text-white">View Details</button>
+
+                    <div class="flex justify-center items-center size-8 bg-[#ABEF5F] rounded-full group-hover:bg-[#ABEF5F]">
+                        <i class="fa-solid fa-arrow-right-long -rotate-45 text-black group-hover:text-black"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main></main>
