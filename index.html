@@ -1,21 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-white">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <!-- Tailwind and DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: "Manrope", sans-serif;
+            font-style: normal;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
 
+<body>
+    <!-- Header Container -->
+    <header class="max-w-[1170px] w-[90%] mx-auto mt-12 mb-28">
+        <!-- Nav Section -->
+        <nav class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex gap-2 items-center">
+                <div class="flex justify-center items-center size-8 bg-[#ABEF5F] rounded-full">
+                    <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
+                </div>
+                <h1 class="text-3xl font-extrabold">Rinterio</h1>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="block md:block lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div> 
+
+            <!-- Menu -->
+            <div class="hidden md:hidden lg:block">
+                <ul class="flex gap-9 items-center text-[#737373]">
+                    <li class="text-[#494949] font-extrabold">Home</li>
+                    <li class="text-[#737373]">Services</li>
+                    <li class="text-[#737373]">Portfolio</li>
+                    <li class="text-[#737373]">Blogs</li>
+                    <li class="text-[#737373]">Contact Us</li>
+                </ul>
+            </div>
+
+            <!-- Icons and button container -->
+            <div class="hidden md:hidden lg:flex lg:items-center lg:gap-4">
+                <!-- search and cart icon -->
+                <div class="btn flex justify-center items-center size-12 border-2 border-[#E9E9E9] rounded-full bg-white group">
+                    <i class="fa-solid fa-magnifying-glass group-hover:text-white"></i>
+                </div>
+                <div class="btn flex justify-center items-center size-12 border-2 border-[#E9E9E9] rounded-full bg-white group">
+                    <i class="fa-solid fa-cart-shopping group-hover:text-white"></i>
+                </div>
+                <!-- btn -->
+                <div class="btn bg-[#ABEF5F] text-[#1C1C1C] text-xl border-none rounded-[32px] group">
+                    <button class="group-hover:text-white">Book Consult</button>
+
+                    <div class="flex justify-center items-center size-8 bg-[#1C1C1C] rounded-full group-hover:bg-[#ABEF5F]">
+                        <i class="fa-solid fa-arrow-right-long -rotate-45 text-white group-hover:text-black"></i>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
     </header>
 
     <main></main>
-    
+
     <footer></footer>
 </body>
 
